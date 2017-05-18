@@ -1,6 +1,7 @@
 package com.apro.patterns.behavioral.iterator;
 
 public class IteratorPatternDemo {
+
     public static void main(String[] args) {
         NameRepository namesRepository = new NameRepository();
 
