@@ -1,0 +1,28 @@
+apply plugin: "java"
+apply plugin: "application"
+
+mainClassName = 'com.apro.patterns.Main'
+
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "log4j:log4j:1.2.17"
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "3.5"
+}
