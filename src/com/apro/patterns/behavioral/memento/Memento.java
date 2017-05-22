@@ -1,13 +1,13 @@
 package com.apro.patterns.behavioral.memento;
 
-public class Memento {
+class Memento {
     private String state;
 
-    public Memento(String state) {
+    Memento(String state) {
         this.state = state;
     }
 
-    public String getState() {
+    String getState() {
         return state;
     }
 }

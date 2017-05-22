@@ -1,22 +1,22 @@
 package com.apro.patterns.behavioral.memento;
 
-public class Originator {
+class Originator {
 
     private String state;
 
-    public String getState() {
+    String getState() {
         return state;
     }
 
-    public void setState(String state) {
+    void setState(String state) {
         this.state = state;
     }
 
-    public Memento saveStateToMemento() {
+    Memento saveStateToMemento() {
         return new Memento(state);
     }
 
-    public void getStateFromMemento(Memento memento) {
+    void getStateFromMemento(Memento memento) {
         state = memento.getState();
     }
 }
